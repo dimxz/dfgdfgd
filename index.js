@@ -2,6 +2,7 @@
 // Recode bg Dimxz
 const express = require('express');
 
+const path = require('path')
 const app = express();
 
 // Pengaturan EJS sebagai template engine
@@ -26,7 +27,6 @@ app.listen(PORT, () => {
 const {
    spawn
 } = require('child_process')
-const path = require('path')
 
 function start() {
    let args = [path.join(__dirname, 'main.js'), ...process.argv.slice(2)]
